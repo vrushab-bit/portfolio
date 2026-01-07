@@ -4,12 +4,12 @@ import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 export const RESUME_DATA = {
   name: "Vrushab Ghodke",
   initials: "VG",
-  location: "Pune, Maharashtra, India",
-  locationLink: "https://maps.app.goo.gl/VLVgeJ4AnJFiE5ur8",
-  about: "Software Engineer, Full Stack Developer, Genrative AI Enthusiast",
+  location: "Bangalore, Karnataka, India",
+  locationLink: "https://maps.app.goo.gl/maps/BangaloreKarnatakaIndia",
+  about: "Software Engineer, Full Stack Developer, Generative AI Enthusiast",
   summary:
-    "As an experienced Full Stack Web Developer proficient in Python, Javascript, and ReactJS, I am dedicated to delivering innovative solutions and exceeding expectations. With a Master's degree in Computer Applications from Vellore Institute of Technology and hands-on experience in developing web applications and APIs, I constantly seek to expand my technical expertise. My proactive risk mindset, commitment to continuous learning, and excellent communication skills enable me to navigate challenges and collaborate effectively in fast-paced, dynamic environments. Looking ahead, I aspire to enhance my skills, transition into a leadership role, and make a significant contribution to any organization I work with.",
-  avatarUrl: "https://i.ibb.co/F6J79PY/avatar.jpg",
+    "As an experienced Software Engineer proficient in Python, Go, JavaScript, and cloud technologies, I am dedicated to delivering innovative solutions and exceeding expectations. With a Master's degree in Computer Applications from Vellore Institute of Technology and hands-on experience in developing microservices, cloud migrations, and AI-powered applications, I constantly seek to expand my technical expertise. My experience includes migrating infrastructure to GCP, deploying microservices on Kubernetes, and developing RAG engines. I am passionate about open source contributions and continuously learning new technologies to solve complex problems.",
+  avatarUrl: "/avatar/avatar.jpeg",
   contact: {
     email: "vrushab.ghodke@gmail.com",
     tel: "+919850214244",
@@ -29,106 +29,130 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Vellore Institute of Technology",
-      degree: "Masters In Computer Applications",
-      start: "2023",
-      end: "2025",
+      degree: "Master's in Computer Applications",
+      start: "Aug 2023",
+      end: "March 2025",
+      location: "Vellore, Tamil Nadu",
     },
     {
       school: "Pune University",
-      degree: "Bachelors In Computer Applications",
-      start: "2019",
-      end: "2022",
+      degree: "Bachelor's in Computer Applications",
+      start: "Aug 2019",
+      end: "March 2022",
+      location: "Pune, Maharashtra",
     },
   ],
   work: [
     {
+      company: "OneAssure",
+      link: "#",
+      badges: [],
+      title: "Software Engineer",
+      start: "Dec 2024",
+      end: "Present",
+      location: "Bangalore, Karnataka",
+      description: `
+      - Migrated AWS to GCP (Terraform/Terragrunt), improving scalability by 40% and reducing cloud costs by 30%.<br/>
+      - Deployed 10+ microservices on GKE, optimizing resources by 25% and achieving 99.99% uptime.<br/>
+      - Developed Go boilerplate (gRPC/HTTP), cutting microservice development by 50% and developer onboarding by 30%.<br/>
+      - Reduced product integration time from 3 months to 3 weeks via workflow re-architecture and automation.<br/>
+      - Automated KYC, payments, and insurer integrations using Go and Temporal workflows.<br/>
+      - Implemented Lua Scripting to dynamically inject parameters and transformed request/response bodies for insurer endpoints using Lua scripts, enhancing system adaptability.<br/>
+      - Developed Retrieval Augmented Generation (RAG) engine prototype (LlamaIndex, MongoDB) for enhanced data retrieval.<br/>
+      `,
+    },
+    {
       company: "Freelancing Projects",
       link: "#",
       badges: ["Freelancer"],
-      title: "Software Engineer",
-      start: "Feb 2023",
-      end: "Present",
+      title: "Full Stack Web Developer",
+      start: "Feb 2024",
+      end: "Jul 2024",
+      location: "Pune, Maharashtra",
       description: `
-      - Project name: Ace Packaging - A minimalist CRM platform for Ace Packaging to manage their business workflows <br/>
-          <div class="ml-5">
-            • Developed a Customer Relationship Management (CRM) application to enhance client management and streamline workflow processes at Ace Packaging<br/>
-            • Leveraged Next.js and Server Actions to optimize backend operations and improve data handling, resulting in a more efficient system.<br/>
-            • Automated key business functions, including lead management, order tracking, and customer interactions, reducing manual workloads and increasing operational efficiency.<br/>
-            • Created a modular architecture for the CRM application, allowing for easy scalability and adaptability as business requirements evolve.<br/>
-            • Integrated a real-time notification system using Knock to enhance user engagement and provide instant updates within the CRM application.</br>
-          </div>
-    
-      - Technologies: <br/>
-          <div class="ml-5">
-            • Nextjs 14 <br/>
-            • Prisma ORM<br/>
-            • TypeScript<br/>
-            • React-hooks, React-Hook-Form </br>
-            • REST API, Knockjs<br/>
-            • Cloud: Postgres, AWS RDS, AWS EC2, AWS S3 Buckets <br/>
-          </div>
-      - Tools control: Git, Github, Git Actions, Prometheus, Grafana, Loki, Docker
-      <br/>
-      <br/>
-      - Project name: GetMeDesign : A platform for designers to create portfolios.<br/>
-      - Team size: 8<br/>
-      - Responsibilities:<br/>
-          <div class="ml-5">
-            • Developed a comprehensive platform for Designing professionals. <br/>
-            • Implementd JWT authentication to securely manage user sessions and implemented role-based authorization to provide fine-grained control over access to different features of the application, ensuring data security and flexibility. <br/>
-            • Developed reusable react components for the platform.<br/>
-          </div><br/>
-      - Technologies:<br/>
-          <div class="ml-5">
-            • TypeScript<br/>
-            • React, Vite, mongodb<br/>
-            • Express, JWT, socket.io <br/>
-            • Tools control: Git, Github<br/>
-          </div>
+      - Developed web applications: sales system transformation (Excel to web-based) and a platform for design professionals.<br/>
+      - Implemented secure user authentication (JWT) and role-based access control.<br/>
+      - Deployed applications on AWS (Route 53, EC2) using Docker and monitored via Prometheus/Grafana.<br/>
       `,
     },
-
     {
-      company: "Swalay",
+      company: "SwaLay",
       link: "https://www.swalay.talantoncore.in/",
       badges: ["Intern"],
-      title: "Software Engineer",
-      start: "May 2022",
-      end: "Nov 2022",
+      title: "Software Engineering Intern",
+      start: "Aug 2023",
+      end: "Jan 2024",
+      location: "Pune, Maharashtra",
       description: `
-      - Responsibilities:<br/>
-          <div class="ml-5">
-            • Designed and developed APIs using Nodejs for integrating SwaLay’s platform with various third-party applications and services.<br/> 
-            • Collaborated with team members to design and implement a comprehensive database infrastructure for SwaLay.<br/>
-            • Develop and fix the application’s defect base on requirements<br/>
-            • Contributed to the implementation of a CI/CD pipeline using GitHub Actions for the SwaLay music platform.<br/>
-          </div>
-          <br/>
-      - Technologies: <br/>
-          <div class="ml-5">
-            • JavaScript, React, MERN Stack <br/>
-            • Docker, Devops<br/>
-          </div>
-      - Tools control: Git
-      <br/>
+      - Designed and developed APIs using Nodejs for integrating SwaLay's platform with various third-party applications and services.<br/> 
+      - Collaborated with team members to design and implement a comprehensive database infrastructure for SwaLay.<br/>
+      - Contributed to the implementation of a CI/CD pipeline using GitHub Actions for the SwaLay music platform.<br/>
       `,
     },
   ],
   skills: [
     "Python",
-    "Javascript",
-    "React/Next.js",
-    "MERN Stack",
-    "Postgres",
-    "MongoDB",
-    "Langchain",
-    "Django",
+    "Go",
+    "JavaScript (ES6+)",
+    "HTML/CSS",
+    "SQL",
+    "Lua",
+    "React",
+    "Next.js",
+    "Express",
     "Flask",
     "FastAPI",
-    "AWS",
-    "Azure",
-    "Git",
+    "Node.js",
+    "gRPC",
+    "Temporal",
+    "LlamaIndex",
+    "MongoDB",
+    "Postgres",
+    "GCP (GKE)",
+    "AWS (EC2, S3, Lambda, API Gateway)",
     "Docker",
     "Kubernetes",
+    "Terraform",
+    "Terragrunt",
+    "Jenkins",
+    "GitHub",
+    "Prometheus",
+    "Grafana",
+    "Loki",
+    "Linux",
+  ],
+  openSource: [
+    {
+      organization: "LlamaIndex",
+      role: "Contributor",
+      description:
+        "Developed and contributed a Mongo Chat Store, enhancing LlamaIndex's capabilities for persistent chat history management and retrieval with MongoDB.",
+      prLink: "https://github.com/run-llama/llama_index/pull/17979",
+    },
+    {
+      organization: "LlamaIndex",
+      role: "Contributor",
+      description:
+        "Added functionality to Postgres Chat Store to support different schemas.",
+      prLink: "https://github.com/run-llama/llama_index/pull/19741",
+    },
+  ],
+  achievements: [
+    {
+      title: "Bolt 2.0 (Organized by ic-ETITE 24)",
+      role: "Competitor",
+      date: "February 2024",
+      location: "Vellore Institute of Technology",
+      description:
+        "Participated in a 28-hour hackathon focused on improving accessibility and solving problems in existing Ed Tech platforms. Collaborated in a team of four to develop an AI-powered learning assistant that leverages personalized video context. Awarded a Participation Certificate for actively contributing to the event.",
+    },
+    {
+      title: "HackBattle (Organized by IEEE CS Club)",
+      role: "Competitor",
+      date: "November 2023",
+      location: "Vellore Institute of Technology",
+      description:
+        "Participated in a 36-hour hackathon focused on tackling challenges in the healthcare industry. Collaborated with a team to develop a patient data management platform for healthcare organizations. Awarded a Participation Certificate for actively contributing to the event.",
+    },
   ],
 } as const;

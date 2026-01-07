@@ -1,5 +1,5 @@
 import { RESUME_DATA } from "@/data/resume-data";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, FileTextIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Loading } from "@/components/ui/loading";
@@ -45,11 +45,21 @@ function Header() {
               size="icon"
               asChild
             >
-              <a href={social.url}>
+              <a href={social.url} target="_blank" rel="noopener noreferrer">
                 <social.icon className="h-4 w-4" />
               </a>
             </Button>
           ))}
+          <Button className="h-8 w-8" variant="outline" size="icon" asChild>
+            <a
+              href="/resume/Resume_March_2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Resume"
+            >
+              <FileTextIcon className="h-4 w-4" />
+            </a>
+          </Button>
         </div>
         <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
           {RESUME_DATA.contact.email ? (

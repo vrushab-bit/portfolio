@@ -20,7 +20,14 @@ function Education({}: Props) {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="mt-2">{education.degree}</CardContent>
+            <CardContent className="mt-2">
+              <div>{education.degree}</div>
+              {education.location && (
+                <div className="mt-1 text-xs text-muted-foreground">
+                  {education.location}
+                </div>
+              )}
+            </CardContent>
           </Card>
         );
       })}

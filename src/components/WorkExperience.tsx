@@ -1,7 +1,7 @@
 import { RESUME_DATA } from "@/data/resume-data";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import ReactHtmlParser from "react-html-parser";
+import parse from "html-react-parser";
 
 type Props = {};
 
@@ -37,9 +37,14 @@ function WorkExperience({}: Props) {
               </div>
 
               <h4 className="font-mono text-sm leading-none">{work.title}</h4>
+              {work.location && (
+                <div className="mt-1 text-xs text-muted-foreground">
+                  {work.location}
+                </div>
+              )}
             </CardHeader>
             <CardContent className="mt-2 text-xs">
-              <div>{ReactHtmlParser(work.description)}</div>
+              <div>{parse(work.description)}</div>
             </CardContent>
           </Card>
         );

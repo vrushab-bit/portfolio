@@ -7,6 +7,8 @@ import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Skils from "@/components/Skils";
+import OpenSource from "@/components/OpenSource";
+import Achievements from "@/components/Achievements";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -26,6 +28,12 @@ export default function Page() {
         </Section>
         <Section>
           <Education />
+        </Section>
+        <Section>
+          <OpenSource />
+        </Section>
+        <Section>
+          <Achievements />
         </Section>
         <Section>
           <Skils />
