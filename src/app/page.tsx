@@ -47,6 +47,9 @@ export default function Page() {
             title: socialMediaLink.name,
           })),
         ]}
+        email={RESUME_DATA.contact.email}
+        phone={RESUME_DATA.contact.tel}
+        resumeUrl="/resume/Resume_March_2025.pdf"
       />
     </main>
   );

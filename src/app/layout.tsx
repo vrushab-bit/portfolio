@@ -8,6 +8,11 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Vrushab-Bit Portfolio",
   description: "A Minimal Portfolio Website",
+  icons: {
+    icon: "/avatar/avatar.jpeg",
+    shortcut: "/avatar/avatar.jpeg",
+    apple: "/avatar/avatar.jpeg",
+  },
 };
 
 // If loading a variable font, you don't need to specify the font weight

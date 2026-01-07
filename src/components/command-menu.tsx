@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { MailIcon, PhoneIcon, FileTextIcon } from "lucide-react";
 
 import {
   CommandDialog,
@@ -14,9 +15,12 @@ import {
 
 interface Props {
   links: { url: string; title: string }[];
+  email?: string;
+  phone?: string;
+  resumeUrl?: string;
 }
 
-export const CommandMenu = ({ links }: Props) => {
+export const CommandMenu = ({ links, email, phone, resumeUrl }: Props) => {
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -30,6 +34,15 @@ export const CommandMenu = ({ links }: Props) => {
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
   }, []);
+
+  const handleAction = (url: string, isExternal = false) => {
+    setOpen(false);
+    if (isExternal) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      window.location.href = url;
+    }
+  };
 
   return (
     <>
@@ -54,14 +67,37 @@ export const CommandMenu = ({ links }: Props) => {
               <span>Print</span>
             </CommandItem>
           </CommandGroup>
+          <CommandGroup heading="Contact">
+            {email && (
+              <CommandItem
+                onSelect={() => handleAction(`mailto:${email}`)}
+              >
+                <MailIcon className="mr-2 h-4 w-4" />
+                <span>Email</span>
+              </CommandItem>
+            )}
+            {phone && (
+              <CommandItem
+                onSelect={() => handleAction(`tel:${phone}`)}
+              >
+                <PhoneIcon className="mr-2 h-4 w-4" />
+                <span>Phone</span>
+              </CommandItem>
+            )}
+            {resumeUrl && (
+              <CommandItem
+                onSelect={() => handleAction(resumeUrl, true)}
+              >
+                <FileTextIcon className="mr-2 h-4 w-4" />
+                <span>Resume</span>
+              </CommandItem>
+            )}
+          </CommandGroup>
           <CommandGroup heading="Links">
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}
-                onSelect={() => {
-                  setOpen(false);
-                  window.open(url, "_blank");
-                }}
+                onSelect={() => handleAction(url, true)}
               >
                 <span>{title}</span>
               </CommandItem>
