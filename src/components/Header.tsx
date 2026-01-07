@@ -52,7 +52,7 @@ function Header() {
           ))}
           <Button className="h-8 w-8" variant="outline" size="icon" asChild>
             <a
-              href="/resume/Resume_March_2025.pdf"
+              href="/resume/Resume_Jan_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resume"

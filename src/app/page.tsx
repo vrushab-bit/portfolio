@@ -49,7 +49,7 @@ export default function Page() {
         ]}
         email={RESUME_DATA.contact.email}
         phone={RESUME_DATA.contact.tel}
-        resumeUrl="/resume/Resume_March_2025.pdf"
+        resumeUrl="/resume/Resume_Jan_2026.pdf"
       />
     </main>
   );

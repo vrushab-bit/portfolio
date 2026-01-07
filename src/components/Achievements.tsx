@@ -6,9 +6,7 @@ type Props = {};
 function Achievements({}: Props) {
   return (
     <>
-      <h2 className="text-xl font-bold">
-        Other Achievements / Extracurricular
-      </h2>
+      <h2 className="text-xl font-bold">Honors & Awards</h2>
       {RESUME_DATA.achievements.map((achievement) => {
         return (
           <Card key={achievement.title}>

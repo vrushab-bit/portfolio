@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   initials: "VG",
   location: "Bangalore, Karnataka, India",
   locationLink: "https://maps.app.goo.gl/maps/BangaloreKarnatakaIndia",
-  about: "Software Engineer, Full Stack Developer, Generative AI Enthusiast",
+  about: "Lead AI Platform Engineer, Full Stack Developer, Generative AI Enthusiast",
   summary:
-    "As an experienced Software Engineer proficient in Python, Go, JavaScript, and cloud technologies, I am dedicated to delivering innovative solutions and exceeding expectations. With a Master's degree in Computer Applications from Vellore Institute of Technology and hands-on experience in developing microservices, cloud migrations, and AI-powered applications, I constantly seek to expand my technical expertise. My experience includes migrating infrastructure to GCP, deploying microservices on Kubernetes, and developing RAG engines. I am passionate about open source contributions and continuously learning new technologies to solve complex problems.",
+    "As a Lead AI Platform Engineer with expertise in agentic AI, LLMs, and cloud infrastructure, I architect and build enterprise-grade AI systems. With a Master's degree in Computer Applications from Vellore Institute of Technology, I specialize in multi-agent ecosystems, RAG architectures, and scalable microservices. My experience includes building agentic AI systems with Microsoft AutoGen, re-engineering RAG pipelines with RAGFlow, and orchestrating cloud migrations. I am passionate about open source contributions and continuously pushing the boundaries of AI technology.",
   avatarUrl: "/avatar/avatar.jpeg",
   contact: {
     email: "vrushab.ghodke@gmail.com",
@@ -47,32 +47,20 @@ export const RESUME_DATA = {
       company: "OneAssure",
       link: "#",
       badges: [],
-      title: "Software Engineer",
+      title: "Lead AI Platform Engineer",
       start: "Dec 2024",
       end: "Present",
       location: "Bangalore, Karnataka",
       description: `
-      - Migrated AWS to GCP (Terraform/Terragrunt), improving scalability by 40% and reducing cloud costs by 30%.<br/>
-      - Deployed 10+ microservices on GKE, optimizing resources by 25% and achieving 99.99% uptime.<br/>
-      - Developed Go boilerplate (gRPC/HTTP), cutting microservice development by 50% and developer onboarding by 30%.<br/>
-      - Reduced product integration time from 3 months to 3 weeks via workflow re-architecture and automation.<br/>
-      - Automated KYC, payments, and insurer integrations using Go and Temporal workflows.<br/>
-      - Implemented Lua Scripting to dynamically inject parameters and transformed request/response bodies for insurer endpoints using Lua scripts, enhancing system adaptability.<br/>
-      - Developed Retrieval Augmented Generation (RAG) engine prototype (LlamaIndex, MongoDB) for enhanced data retrieval.<br/>
-      `,
-    },
-    {
-      company: "Freelancing Projects",
-      link: "#",
-      badges: ["Freelancer"],
-      title: "Full Stack Web Developer",
-      start: "Feb 2024",
-      end: "Jul 2024",
-      location: "Pune, Maharashtra",
-      description: `
-      - Developed web applications: sales system transformation (Excel to web-based) and a platform for design professionals.<br/>
-      - Implemented secure user authentication (JWT) and role-based access control.<br/>
-      - Deployed applications on AWS (Route 53, EC2) using Docker and monitored via Prometheus/Grafana.<br/>
+      - Agentic AI Architecture: Architected a multi-agent ecosystem using Microsoft AutoGen, enabling specialized agents to autonomously collaborate on complex tasks such as policy comparison and claims eligibility.<br/>
+      - Dynamic MCP Gateway: Developed a Model Context Protocol (MCP) gateway using FastMCP to interface with the AutoGen multi-agent cluster, implementing dynamic configuration fetching from the database to ensure real-time agent adaptability.<br/>
+      - Enterprise Vertex AI Integration: Engineered specialized AutoGen classes to integrate Google Gemini models via Vertex AI, creating a fully OpenAPI-compliant, enterprise-grade agent system capable of secure, scalable deployment.<br/>
+      - Advanced RAG Architecture: Re-engineered the retrieval pipeline using RAGFlow to leverage deep document understanding for superior similarity and vector search. Extended the open-source codebase to support Google Cloud Vertex AI and Gemini embedding models.<br/>
+      - Temporal Workflow Orchestration: Re-architected critical business flows (KYC, Payments) using Temporal, compressing product integration timelines from 3 months to 3 weeks.<br/>
+      - Go Ecosystem Acceleration: Engineered a standardized Go/gRPC boilerplate, slashing microservice development cycles by 50% and reducing developer onboarding time by 30%.<br/>
+      - Cloud Migration & Cost Optimization: Orchestrated the infrastructure migration from AWS to GCP using Terraform/Terragrunt, resulting in a 30% reduction in cloud costs and a 40% improvement in scalability.<br/>
+      - GKE Orchestration: Managed the containerization and deployment of 10+ microservices on Google Kubernetes Engine (GKE), optimizing resource allocation by 25% while maintaining 99.99% system uptime.<br/>
+      - Dynamic API Gateway: Integrated Lua scripting for dynamic parameter injection and payload transformation, significantly enhancing system adaptability without requiring backend code changes.<br/>
       `,
     },
     {
@@ -80,79 +68,87 @@ export const RESUME_DATA = {
       link: "https://www.swalay.talantoncore.in/",
       badges: ["Intern"],
       title: "Software Engineering Intern",
-      start: "Aug 2023",
-      end: "Jan 2024",
+      start: "Feb 2024",
+      end: "Jul 2024",
       location: "Pune, Maharashtra",
       description: `
-      - Designed and developed APIs using Nodejs for integrating SwaLay's platform with various third-party applications and services.<br/> 
-      - Collaborated with team members to design and implement a comprehensive database infrastructure for SwaLay.<br/>
-      - Contributed to the implementation of a CI/CD pipeline using GitHub Actions for the SwaLay music platform.<br/>
+      - API & Database Design: Designed scalable Node.js APIs for third-party integrations and architected the comprehensive database infrastructure to support the music distribution platform.<br/>
+      - CI/CD Implementation: Built and maintained CI/CD pipelines using GitHub Actions, automating testing and deployment workflows to reduce manual release overhead.<br/>
       `,
     },
   ],
   skills: [
-    "Python",
     "Go",
+    "Python",
+    "Java",
     "JavaScript (ES6+)",
-    "HTML/CSS",
     "SQL",
     "Lua",
+    "HTML/CSS",
+    "Node.js",
     "React",
     "Next.js",
     "Express",
     "Flask",
     "FastAPI",
-    "Node.js",
-    "gRPC",
-    "Temporal",
+    "Gin",
     "LlamaIndex",
-    "MongoDB",
-    "Postgres",
-    "GCP (GKE)",
-    "AWS (EC2, S3, Lambda, API Gateway)",
+    "Microsoft AutoGen",
+    "Langchain",
+    "RAGFlow",
+    "Vertex AI",
+    "Agentic AI",
+    "Embeddings",
+    "GCP (GKE, Artifact Registry)",
+    "AWS (Lambda, API Gateway, Route 53, S3, EC2, EKS)",
     "Docker",
     "Kubernetes",
     "Terraform",
     "Terragrunt",
     "Jenkins",
-    "GitHub",
+    "GitHub Actions",
+    "Linux (Ubuntu)",
     "Prometheus",
     "Grafana",
     "Loki",
-    "Linux",
+    "AWS IAM",
+    "JWT",
+    "RBAC",
+    "OAuth",
+    "MongoDB",
+    "PostgreSQL",
+    "OpenSearch (Vector)",
+    "Redis",
+    "MinIO",
+    "Microservices",
+    "Serverless",
+    "Event-Driven Architecture",
   ],
   openSource: [
     {
       organization: "LlamaIndex",
       role: "Contributor",
       description:
-        "Developed and contributed a Mongo Chat Store, enhancing LlamaIndex's capabilities for persistent chat history management and retrieval with MongoDB.",
+        "Developed & contributed a Mongo Chat Store, enhancing LlamaIndex's capabilities for persistent chat history management. Added functionality to Postgres Chat Store to support different schemas.",
       prLink: "https://github.com/run-llama/llama_index/pull/17979",
-    },
-    {
-      organization: "LlamaIndex",
-      role: "Contributor",
-      description:
-        "Added functionality to Postgres Chat Store to support different schemas.",
-      prLink: "https://github.com/run-llama/llama_index/pull/19741",
     },
   ],
   achievements: [
     {
-      title: "Bolt 2.0 (Organized by ic-ETITE 24)",
+      title: "Bolt 2.0 Hackathon (2024)",
       role: "Competitor",
-      date: "February 2024",
+      date: "2024",
       location: "Vellore Institute of Technology",
       description:
-        "Participated in a 28-hour hackathon focused on improving accessibility and solving problems in existing Ed Tech platforms. Collaborated in a team of four to develop an AI-powered learning assistant that leverages personalized video context. Awarded a Participation Certificate for actively contributing to the event.",
+        "Developed an AI-powered learning assistant with personalized video context; focused on EdTech accessibility.",
     },
     {
-      title: "HackBattle (Organized by IEEE CS Club)",
+      title: "HackBattle (2023)",
       role: "Competitor",
-      date: "November 2023",
+      date: "2023",
       location: "Vellore Institute of Technology",
       description:
-        "Participated in a 36-hour hackathon focused on tackling challenges in the healthcare industry. Collaborated with a team to develop a patient data management platform for healthcare organizations. Awarded a Participation Certificate for actively contributing to the event.",
+        "Built a patient data management platform for healthcare organizations (IEEE CS Club).",
     },
   ],
 } as const;
